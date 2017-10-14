@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+  #logo {
+    margin-top:20px;
+    float: left;
+    > img {
+      width: 253px;
+    }
+  }
+  .title {
+    float: right;
+    text-align: right;
+  }
+  nav {
+    float: right;
+    width: 60%;
+    
+    a {
+      padding-left: 14px;
+      padding-right: 14px;
+      float: right;
+      margin-left: 10px;
+      .border-radius(6px);
+    }
+  }
+  .main {
+    > article {
+      float: left;
+      width: 57%;
+    }
+    > aside {
+      float: right;
+      width: 38%;
+      font-size: @base-font-size;
+    }
+  }
+
+  .contact-info {
+    > li > .contact-details {
+      padding-left: 32%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 980px;
+  }
+}
+

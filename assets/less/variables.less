@@ -1,0 +1,45 @@
+// Colors
+//-----------
+
+//@body-background:      #f0f1f0;
+@body-background:      url(../img/body-bg.jpg) 0 0 repeat-x;
+@body-color:           @gray-darker;
+
+@white:                #fff;
+@black:                #000;
+
+@gray-darker:          #282828;
+@gray:                 #909090;
+@gray-light:           #c0c0c0;
+
+
+@blue-light:           #5088ff;
+@blue:                 #284488;
+@blue-dark:            darken(@blue, 5%);
+
+@yellow:               #e1d932;
+
+// Fonts
+//-----------
+@sans-font: Helvetica, "Helvetica Neue", Arial, sans-serif;
+@mono-font: Monaco, Menlo, Consolas, "Courier New", monospace;
+  
+@base-font-size: 16px;
+@base-font-family: @sans-font;
+@base-line-height: 26px;
+
+// Google Webfont -- http://www.google.com/webfonts/specimen/News+Cycle
+.webfont-bold () {
+  font-family: 'News Cycle', sans-serif;
+  font-weight:700; 
+  font-style:normal; 
+}
+.webfont-thin () {
+  font-family: 'News Cycle', sans-serif;
+  font-weight:400; 
+  font-style:normal; 
+}
+
+@font-size-large:         @base-font-size * 1.375;   // ~22px
+@font-size-small:         @base-font-size * 0.75;    // ~12px
+@font-size-mini:          @base-font-size * 0.6875;  // ~11px

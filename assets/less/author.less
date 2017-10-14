@@ -1,0 +1,185 @@
+body {
+  background: @body-background;
+  color: @body-color;
+}
+
+
+.wrapper {
+//  width: 90%;
+  margin: 0 5%;
+}
+
+// Heading: OOCSS
+//-------------------------
+.hx () {
+  .webfont-bold;
+  color: @blue;
+}
+h1, .h1{
+  font-size: @base-font-size * 1.8125; //~32px
+  .hx
+}
+h2, .h2{
+  font-size: @base-font-size *1.67; //~27px
+  .hx
+}
+h3, .h3{
+  font-size: @base-font-size *1.465; //~23px
+  .hx
+}
+h4, .h4{
+  font-size: @base-font-size *1.231; //~20px
+  .hx
+}
+h5, .h5{
+  font-size: @base-font-size *1.08; //~17px
+  .hx
+}
+h6, .h6{
+  font-size: @base-font-size *1.08; //~17px
+  .hx
+}
+
+// ALL: Nash Auto Theme
+//-------------------------
+#logo {
+  > img {
+    width: 100%;
+  }
+}
+.title {
+  font-size: @base-font-size * 1.67;
+}
+
+// MOBILE: Menu
+//-------------------------
+nav {
+  > ul {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: @white;
+    background: @blue;
+
+    &:hover {
+      color: @yellow;
+    }
+    &:hover {
+      background-color: @blue-dark;
+    }
+  }
+}
+
+// MOBILE: Main
+//-------------------------
+
+.main {
+  padding: 30px 0;
+
+  > aside {
+    font-size: @font-size-large * 0.75;
+    color: @blue;
+  }
+}
+
+.offers {
+  .offers-title {
+    font-size: @base-font-size * 1.67;
+    color: @white;
+    .webfont-thin;
+    background-color: @blue;
+    margin: 0;
+    padding: 10px 20px 20px 20px;
+    .border-top-radius(6px);
+  }
+
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+    
+    & > li {
+
+      & > a {
+        font-family: @sans-font;
+        display: block;
+        background: @gray-light;
+        color: @blue;
+        text-decoration: none;
+        padding: 20px;
+        border-top: 1px solid @white;
+        border-bottom: 1px solid darken(@gray-light, 20%);
+
+        &:hover {
+          background-color: @blue;
+          color: @yellow;
+        }
+        &:active {
+          background: darken(@blue-dark, 5%);
+        }
+      }
+      &:last-child > a {
+        .border-bottom-radius(6px);
+      }
+    }
+  }
+}
+
+.contact-info {
+  margin: 10px 0 0 0;
+  padding: 14px;
+  list-style: none;
+  background-color: @white;
+  .border-radius(4px);
+  border: 1px solid @gray-light;
+
+  > li {
+    display: block;
+    padding-bottom: 20px;
+
+    > span {
+      float: left;
+      display: block;
+      text-transform: uppercase;
+      color: @gray;
+      .webfont-thin;
+    }
+  > .contact-details {
+      color: @blue;
+      text-transform: none;
+      float: none;
+      padding-left: 40%;
+    }
+  }
+}
+
+// Footer
+//-------
+.footer-container {
+  footer {
+    font-size: @font-size-mini;
+    color: @gray;
+    padding: 20px 0;
+  }
+}
+
+
+
+// 3rd party add-ons
+//----------------------
+#scheduler_tile_s, #reviews_tile_s {
+  display: none;
+}
+#map_canvas {
+  border: 1px solid @gray-light;
+  margin-top:10px;
+  width: 99%;
+}
+
